@@ -221,17 +221,17 @@ int main(){
     string name, klass;
     int damage, armor;
 
-    bool flag = true;
+    bool flag_2 = true;
     cout << "Введите имя вашего героя : ";
     cin >> name;
-    while (flag) {
+    while (flag_2) {
         try {
             cout << "Возможные классы : \n [knight]\t [archer]\t [wizard]\n Класс : ";
             cin >> klass;
             if ((klass != "knight") and (klass != "archer") and (klass != "wizard")) {
                 throw klass;
             }
-            flag = false;
+            flag_2 = false;
         }
         catch (string error) {
             cout << "Нет такого класса!" << endl;
